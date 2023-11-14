@@ -1,6 +1,10 @@
 import StyleDictionaryModule from 'style-dictionary';
 import {tailwindFormat, daisyFormat} from './formatter.js';
 
+const brands = ['eca-brand'];
+const themes = ['eca-light', 'eca-dark'];
+
+
 StyleDictionaryModule.registerFormat({
     name: 'tailwind',
     formatter: ({dictionary}) => tailwindFormat({dictionary, isVariables: false})
@@ -19,9 +23,9 @@ StyleDictionaryModule.registerTransform({
     }
 })
 
-StyleDictionaryModule.extend(
+/*StyleDictionaryModule.extend(
     {
-        source: ['tokens/*-colors.json'],
+        source: ['tokens/!*-colors.json'],
         platforms: {
             'tailwind': {
                 transforms: ['attribute/cti', 'name/cti/kebab'],
@@ -34,13 +38,32 @@ StyleDictionaryModule.extend(
             }
         }
     }
-).buildAllPlatforms();
+).buildAllPlatforms();*/
 
-['eca-light', 'eca-dark'].map( (theme)  => {
-
+brands.map( (brand)  => {
     StyleDictionaryModule.extend(
         {
-            include: ['tokens/*-colors.json', 'tokens/tailwind.json'],
+            source: [`tokens/${brand}.json`],
+            platforms: {
+                'tailwind': {
+                    transforms: ['attribute/cti', 'name/cti/kebab'],
+                    buildPath: 'build/tailwind/',
+                    files: [
+                        {
+                            destination: `${brand}.tailwind.js`,
+                            format: 'tailwind'
+                        }]
+                }
+            }
+        }
+    ).buildAllPlatforms();
+});
+
+
+themes.map( (theme)  => {
+    StyleDictionaryModule.extend(
+        {
+            include: ['tokens/*-brand.json', 'tokens/tailwind.json'],
             source: [`tokens/${theme}.json`],
             platforms: {
                 'daisy': {

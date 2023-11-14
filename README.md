@@ -16,4 +16,5 @@ To build the tokens manually, run the following commands:
   - More to come...
 
 ## TODO 
+- Aliases in exported tailwind files - https://tailwindcss.com/docs/customizing-colors#aliasing-color-names
 - Add Github actions to build and publish the tokens to NPM
