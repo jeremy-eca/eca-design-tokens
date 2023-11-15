@@ -29,8 +29,9 @@ jobs:
 
       - name: Publish
         run: |
+          git config user.email "<an email address>"
+          git config user.name "<a name>"
           npm version $VERSION
           npm publish
-          git push "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" "${{ github.ref }}"
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
