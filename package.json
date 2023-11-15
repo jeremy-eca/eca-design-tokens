@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ECA Design Tokens Library",
   "type": "module",
+  "private": false,
   "scripts": {
     "build": "node scripts/build.js"
   },
