@@ -18,5 +18,6 @@
   },
   "publishConfig": {
     "@ECAInternational:registry": "https://npm.pkg.github.com"
-  }
+  },
+  "version": "2.0.0"
 }
