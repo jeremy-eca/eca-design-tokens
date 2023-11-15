@@ -15,6 +15,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ECAInternational/eca-design-tokens.git"
+    "url": "git+https://github.com/ECAInternational/eca-design-tokens.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
