@@ -18,6 +18,6 @@
     "url": "https://github.com/ECAInternational/eca-design-tokens.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@ECAInternational:registry": "https://npm.pkg.github.com"
   }
 }
