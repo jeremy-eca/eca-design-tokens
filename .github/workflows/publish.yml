@@ -25,7 +25,6 @@ jobs:
 
       - name: Publish
         run: |
-          cd build
           npm version patch --no-git-tag-version
           npm publish
         env:
