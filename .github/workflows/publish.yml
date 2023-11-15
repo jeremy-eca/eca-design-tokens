@@ -25,6 +25,8 @@ jobs:
 
       - name: Publish
         run: |
+          git config user.email "<an email address>"
+          git config user.name "<a name>"
           npm version patch
           npm publish
         env:
