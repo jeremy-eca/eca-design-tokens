@@ -23,6 +23,10 @@
     "value": "{colors.Default.black}",
     "type": "color"
   },
+  "accent": {
+    "value": "{colors.yellow.500}",
+    "type": "color"
+  },
   "neutral": {
     "value": "{colors.neutral.200}",
     "type": "color"
