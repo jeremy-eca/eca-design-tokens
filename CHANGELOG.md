@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.4...v1.0.5) (2023-11-16)
+
+
+### Bug Fixes
+
+* Clean package json file before publish ([4ccee65](https://github.com/ECAInternational/eca-design-tokens/commit/4ccee65e077d05459ee3217a25aab9eb3c8a4980))
+* Fix package lock ([ead8cef](https://github.com/ECAInternational/eca-design-tokens/commit/ead8cef45ebea702cf83575e504301ef9ace5b9c))
+
 ## [1.0.4](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.3...v1.0.4) (2023-11-16)
 
 
