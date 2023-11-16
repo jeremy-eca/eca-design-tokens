@@ -7,10 +7,11 @@
     "build": "node scripts/build.js"
   },
   "devDependencies": {
+    "prettier": "3.1.0",
     "style-dictionary": "^3.9.0"
   },
   "files": [
-    "build"
+    "dist/tailwind"
   ],
   "repository": {
     "type": "git",

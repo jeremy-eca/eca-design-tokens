@@ -1,60 +1,57 @@
-export const tailwindFormat = ({dictionary: {allTokens}, isVariables}) => {
-    const allTokenObj = allTokens.reduce((acc, cur) => {
-        if (!cur.attributes) throw new Error(`Token ${cur.name} has no attributes`);
+export const tailwindFormat = ({ dictionary: { allTokens }, isVariables }) => {
+  const allTokenObj = allTokens.reduce((acc, cur) => {
+    if (!cur.attributes) throw new Error(`Token ${cur.name} has no attributes`);
 
-        acc[cur.path.join('.')] = isVariables ? `var(--${cur.name})` : cur.value;
+    acc[cur.path.join('.')] = isVariables ? `var(--${cur.name})` : cur.value;
 
-        return acc;
-    }, {});
+    return acc;
+  }, {});
 
-    const result = Object.keys(allTokenObj).reduce((res, key) => {
-        const keys = key.split('.');
-        makeNestedObject(res, keys, allTokenObj[key]);
-        return res;
-    }, {});
+  const result = Object.keys(allTokenObj).reduce((res, key) => {
+    const keys = key.split('.');
+    makeNestedObject(res, keys, allTokenObj[key]);
+    return res;
+  }, {});
 
-    const content = JSON.stringify(result, null, 2);
-    return `module.exports = ${content}`;
+  const content = JSON.stringify(result, null, 2);
+  return `module.exports = ${content}`;
 };
 
-export const daisyFormat = ({dictionary: {allTokens}}) => {
-    const tokens = allTokens.reduce((acc, cur) => {
-        if (!cur.attributes) throw new Error(`Token ${cur.name} has no attributes`);
+export const daisyFormat = ({ dictionary: { allTokens } }) => {
+  const tokens = allTokens.reduce((acc, cur) => {
+    if (!cur.attributes) throw new Error(`Token ${cur.name} has no attributes`);
 
-        const name = cur.type === 'color' ? cur.path.join('.') : `--${cur.path.join('.')}`;
-        acc[name] = cur.value;
+    const name =
+      cur.type === 'color' ? cur.path.join('.') : `--${cur.path.join('.')}`;
+    acc[name] = cur.value;
 
-        return acc;
-    }, {});
+    return acc;
+  }, {});
 
-    const result = Object.keys(tokens).reduce((res, key) => {
-        const keys = key.split('.');
-        makeNestedObject(res, keys, tokens[key]);
-        return res;
-    }, {});
+  const result = Object.keys(tokens).reduce((res, key) => {
+    const keys = key.split('.');
+    makeNestedObject(res, keys, tokens[key]);
+    return res;
+  }, {});
 
-    const content = JSON.stringify(result, null, 2);
-    return `module.exports = ${content}`;
+  const content = JSON.stringify(result, null, 2);
+  return `module.exports = ${content}`;
 };
 
-const makeNestedObject = (
-    obj,
-    keys,
-    value
-) => {
-    const lastIndex = keys.length - 1
-    for (let i = 0; i < lastIndex; ++i) {
-        const key = keys[i]
-        if (!(key in obj)) {
-            obj[key] = {}
-        }
-        obj = obj[key]
+const makeNestedObject = (obj, keys, value) => {
+  const lastIndex = keys.length - 1;
+  for (let i = 0; i < lastIndex; ++i) {
+    const key = keys[i];
+    if (!(key in obj)) {
+      obj[key] = {};
     }
+    obj = obj[key];
+  }
 
-    // https://v2.tailwindcss.com/docs/upgrading-to-v2#update-default-theme-keys-to-default
-    if (keys[lastIndex] === 'DEFAULT') {
-        obj[keys[lastIndex]] = value
-    } else {
-        obj[keys[lastIndex]] = value
-    }
-}
+  // https://v2.tailwindcss.com/docs/upgrading-to-v2#update-default-theme-keys-to-default
+  if (keys[lastIndex] === 'DEFAULT') {
+    obj[keys[lastIndex]] = value;
+  } else {
+    obj[keys[lastIndex]] = value;
+  }
+};
