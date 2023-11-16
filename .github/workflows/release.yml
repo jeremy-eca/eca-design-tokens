@@ -37,12 +37,15 @@ jobs:
         uses: google-github-actions/release-please-action@v3
         id: release
         with:
-          pull-request-title: 'Release${component} ${version}'
+          pull-request-title-pattern: 'Release${component} ${version}'
           release-type: node
           package-name: '@ecainternational/eca-design-tokens'
 
       - name: Publish NPM Package
-        run: npm publish
+        run: |
+          npx clear-package-json package.json > dist/package.json --fields "type, files, private, publishConfig"
+          cd dist
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         if: ${{ steps.release.outputs.release_created }}
