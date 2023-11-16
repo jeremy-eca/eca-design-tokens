@@ -37,7 +37,7 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: eca-design-tokens
+          package-name: '@ecainternational/eca-design-tokens'
 
       - name: Publish NPM Package
         run: npm publish
