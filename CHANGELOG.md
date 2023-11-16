@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.5...v1.0.6) (2023-11-16)
+
+
+### Bug Fixes
+
+* Add accents to themes ([70d5be6](https://github.com/ECAInternational/eca-design-tokens/commit/70d5be61695b1a9047f280cd2254a58bd96cad54))
+
 ## [1.0.5](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.4...v1.0.5) (2023-11-16)
 
 
