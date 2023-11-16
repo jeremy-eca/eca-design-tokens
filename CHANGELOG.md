@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.0...v1.0.1) (2023-11-16)
+
+
+### Bug Fixes
+
+* Add changelog to prettier ignore ([61f20e1](https://github.com/ECAInternational/eca-design-tokens/commit/61f20e1cc3dca63c59fe7d9d97ea567fa2aa7c52))
+
 ## 1.0.0 (2023-11-16)
 
 
