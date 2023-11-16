@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.2...v1.0.3) (2023-11-16)
+
+
+### Bug Fixes
+
+* Change release PR title ([82fc4f4](https://github.com/ECAInternational/eca-design-tokens/commit/82fc4f41636bc1da7ce888e5f51aaaf747b92473))
+* Fixing package publishing ([4d000c2](https://github.com/ECAInternational/eca-design-tokens/commit/4d000c28ff6640388edc948694dca1e60b2eeddf))
+
 ## [1.0.2](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.1...v1.0.2) (2023-11-16)
 
 
