@@ -4,9 +4,12 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "prettier": "3.1.0",
     "style-dictionary": "^3.9.0"
   },
@@ -19,5 +22,8 @@
   },
   "publishConfig": {
     "@ECAInternational:registry": "https://npm.pkg.github.com"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
