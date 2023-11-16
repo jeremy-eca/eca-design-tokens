@@ -1,4 +1,5 @@
 name: Publish Package
+run-name: Publish Package v${{ env.VERSION }}
 on:
   workflow_run:
     workflows: [Build]
