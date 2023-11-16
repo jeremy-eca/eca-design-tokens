@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.3...v1.0.4) (2023-11-16)
+
+
+### Bug Fixes
+
+* Allow release GHA to publish packages ([0033cb1](https://github.com/ECAInternational/eca-design-tokens/commit/0033cb120e043bb5f1fd6dcb2cbaa3627ffa72f9))
+
 ## [1.0.3](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.2...v1.0.3) (2023-11-16)
 
 
