@@ -6,9 +6,7 @@
   "private": false,
   "scripts": {
     "build": "node scripts/build.js",
-    "prepare": "husky install",
-    "prepack": "clean-publish",
-    "pre": "clean-publish"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "clean-publish": "^4.2.0",
