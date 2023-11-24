@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.7](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.6...v1.0.7) (2023-11-24)
+
+
+### Features
+
+* Improve build and publish workflows ([aae4e47](https://github.com/ECAInternational/eca-design-tokens/commit/aae4e47d819477c8004fa87234869538d73b59eb))
+
+
+### Bug Fixes
+
+* Remove pre and prepack scripts ([c3bc73e](https://github.com/ECAInternational/eca-design-tokens/commit/c3bc73e751140041173046c5eb7d1996c8df9dd1))
+
 ## [1.0.6](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.5...v1.0.6) (2023-11-16)
 
 
