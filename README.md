@@ -2,7 +2,7 @@
 
 This repository contains the design tokens for the ECA Design System in the `tokens` folder
 
-The repository all includes a build script `scripts/build.js` to convert design tokens for use in different platforms using Style Dictionary https://amzn.github.io/style-dictionary
+The repository uses a build script `scripts/build.js` to convert design tokens for use in different platforms using Style Dictionary https://amzn.github.io/style-dictionary
 
 ## Building Tokens Manually
 
@@ -18,4 +18,3 @@ To build the tokens manually, run the following commands:
 ## TODO
 
 - Aliases in exported tailwind files - https://tailwindcss.com/docs/customizing-colors#aliasing-color-names
-- Add Github actions to build and publish the tokens to NPM
