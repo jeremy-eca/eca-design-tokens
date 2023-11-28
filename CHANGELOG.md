@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.7...v1.0.8) (2023-11-24)
+
+
+### Features
+
+* Omprove readme ([41fb2a4](https://github.com/ECAInternational/eca-design-tokens/commit/41fb2a4a6cceff79228e06d62df8847ce16028e6))
+
 ## [1.0.7](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.6...v1.0.7) (2023-11-24)
 
 
