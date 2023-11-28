@@ -1,4 +1,4 @@
-name: Build & Test
+name: Branch - Build & Test
 on:
   push:
     branches-ignore:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Prettier Check
         run: npx prettier . --check
+
+      - name: Lint
+        run: npx eslint './**' --fix
 
       - name: Build
         run: npm run build

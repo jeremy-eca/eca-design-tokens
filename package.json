@@ -6,10 +6,15 @@
   "private": false,
   "scripts": {
     "build": "node scripts/build.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "npx eslint ./** --fix"
   },
   "devDependencies": {
     "clean-publish": "^4.2.0",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.1.0",
     "prettier": "3.1.0",

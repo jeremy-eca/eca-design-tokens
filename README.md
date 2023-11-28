@@ -14,7 +14,3 @@ To build the tokens manually, run the following commands:
   This will convert the tokens for use in the following platforms:
   - Tailwind (`build/tailwind`)
   - More to come...
-
-## TODO
-
-- Aliases in exported tailwind files - https://tailwindcss.com/docs/customizing-colors#aliasing-color-names

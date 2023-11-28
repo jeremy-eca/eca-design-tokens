@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 export const tailwindFormat = ({ dictionary: { allTokens }, isVariables }) => {
   const allTokenObj = allTokens.reduce((acc, cur) => {
     if (!cur.attributes) throw new Error(`Token ${cur.name} has no attributes`);
@@ -40,18 +41,13 @@ export const daisyFormat = ({ dictionary: { allTokens } }) => {
 
 const makeNestedObject = (obj, keys, value) => {
   const lastIndex = keys.length - 1;
-  for (let i = 0; i < lastIndex; ++i) {
+  for (let i = 0; i < lastIndex; i += 1) {
     const key = keys[i];
     if (!(key in obj)) {
       obj[key] = {};
     }
     obj = obj[key];
   }
-
-  // https://v2.tailwindcss.com/docs/upgrading-to-v2#update-default-theme-keys-to-default
-  if (keys[lastIndex] === 'DEFAULT') {
-    obj[keys[lastIndex]] = value;
-  } else {
-    obj[keys[lastIndex]] = value;
-  }
+  obj[keys[lastIndex]] = value;
 };
+/* eslint-enable no-param-reassign */

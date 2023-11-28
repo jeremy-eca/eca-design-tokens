@@ -1,0 +1,6 @@
+**/*.md
+**/*.mdx
+**/*.json
+**/*.css
+node_modules
+dist

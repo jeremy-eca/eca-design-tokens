@@ -1,5 +1,5 @@
 import StyleDictionaryModule from 'style-dictionary';
-import { tailwindFormat, daisyFormat } from './formatter.js';
+import { tailwindFormat, daisyFormat } from './formatter.mjs';
 
 const brands = ['eca-brand'];
 const themes = ['eca-light', 'eca-dark'];
@@ -16,14 +16,12 @@ StyleDictionaryModule.registerFormat({
 });
 
 StyleDictionaryModule.registerTransform({
-  type: `name`,
-  name: `themeTransform`,
-  transformer: (token) => {
-    return `${token.filePath} ${token.name}`;
-  }
+  type: 'name',
+  name: 'themeTransform',
+  transformer: (token) => `${token.filePath} ${token.name}`
 });
 
-brands.map((brand) => {
+brands.forEach((brand) => {
   StyleDictionaryModule.extend({
     source: [`tokens/${brand}.json`],
     platforms: {
@@ -41,7 +39,7 @@ brands.map((brand) => {
   }).buildAllPlatforms();
 });
 
-themes.map((theme) => {
+themes.forEach((theme) => {
   StyleDictionaryModule.extend({
     include: ['tokens/*-brand.json', 'tokens/tailwind.json'],
     source: [`tokens/${theme}.json`],

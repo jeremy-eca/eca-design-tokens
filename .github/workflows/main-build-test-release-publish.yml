@@ -1,4 +1,4 @@
-name: Build, Test, Update Release & Publish
+name: Main - Build, Test, Update Release & Publish
 
 on:
   push:
@@ -36,11 +36,14 @@ jobs:
       - name: Prettier Check
         run: npx prettier . --check
 
+      - name: Lint
+        run: npx eslint './**' --fix
+
       - name: Build
         run: npm run build
 
   update-release:
-    name: Update Release PR
+    name: Update Release
     needs: build-test
     runs-on: ubuntu-latest
     outputs:
