@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.9](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.8...v1.0.9) (2023-11-29)
+
+
+### Features
+
+* Trying to trigger build ([0af0549](https://github.com/ECAInternational/eca-design-tokens/commit/0af0549509f688819cc76e239f2d86f0c3d5a351))
+
 ## [1.0.8](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.7...v1.0.8) (2023-11-24)
 
 
