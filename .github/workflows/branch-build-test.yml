@@ -10,6 +10,6 @@ env:
 jobs:
   build-test:
     name: Build & Test
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@v1.0.3
+    uses: ecainternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@v1.0.3
     with:
       node-version: ${{env.NODE_VERSION}}
