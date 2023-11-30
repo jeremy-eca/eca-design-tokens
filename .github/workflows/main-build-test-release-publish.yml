@@ -9,7 +9,7 @@ env:
   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   NODE_VERSION: 20
 
-#Move these permissions into the reusables
+#Move these permissions into the reusable
 permissions:
   contents: write
   pull-requests: write
@@ -21,43 +21,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout & Setup
-        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.2
+      - uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.3
         with:
           node-version: ${{env.NODE_VERSION}}
-
-      - name: Prettier Check
-        run: npx prettier . --check
-
-      - name: Lint
-        run: npx eslint './**' --fix
-
-      - name: Build
-        run: npm run build
 
   update-release:
     name: Update Release
     needs: build-test
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@1.0.2
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@1.0.3
     with:
       package-name: '@ecainternational/eca-design-tokens'
 
   publish:
     name: Publish NPM Package
-    runs-on: ubuntu-latest
     needs: update-release
     if: ${{ needs.update-release.outputs.release_created }}
-
-    steps:
-      - name: Checkout & Setup
-        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.2
-        with:
-          node-version: ${{env.NODE_VERSION}}
-
-      - name: Build
-        run: npm run build
-
-      - name: Publish NPM Package
-        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@1.0.2
-        with:
-          build-directory: dist
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@1.0.3
+    with:
+      build-directory: dist

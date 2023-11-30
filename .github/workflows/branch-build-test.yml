@@ -5,26 +5,13 @@ on:
       - main
 
 env:
-  NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   NODE_VERSION: 20
 
 jobs:
   build-test:
     name: Build & Test
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
     steps:
-      - name: Checkout & Setup
-        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.2
+      - uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.3
         with:
           node-version: ${{env.NODE_VERSION}}
-
-      - name: Prettier Check
-        run: npx prettier . --check
-
-      - name: Lint
-        run: npx eslint './**' --fix
-
-      - name: Build
-        run: npm run build
