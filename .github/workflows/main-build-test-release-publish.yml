@@ -9,7 +9,7 @@ env:
   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   NODE_VERSION: 20
 
-#Move these permissions into the reusables
+#Move these permissions into the reusable
 permissions:
   contents: write
   pull-requests: write
