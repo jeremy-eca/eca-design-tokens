@@ -15,17 +15,10 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - name: Checkout & Setup
+        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.2
         with:
           node-version: ${{env.NODE_VERSION}}
-          registry-url: 'https://npm.pkg.github.com'
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Prettier Check
         run: npx prettier . --check

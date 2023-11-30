@@ -9,6 +9,7 @@ env:
   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
   NODE_VERSION: 20
 
+#Move these permissions into the reusables
 permissions:
   contents: write
   pull-requests: write
@@ -18,20 +19,12 @@ jobs:
   build-test:
     name: Build & Test
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
+    steps:
+      - name: Checkout & Setup
+        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.2
         with:
           node-version: ${{env.NODE_VERSION}}
-          registry-url: 'https://npm.pkg.github.com'
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Prettier Check
         run: npx prettier . --check
@@ -45,42 +38,26 @@ jobs:
   update-release:
     name: Update Release
     needs: build-test
-    runs-on: ubuntu-latest
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
-    steps:
-      - name: Run Release Please
-        uses: google-github-actions/release-please-action@v3
-        id: release
-        with:
-          pull-request-title-pattern: 'Release${component} ${version}'
-          release-type: node
-          package-name: '@ecainternational/eca-design-tokens'
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@1.0.2
+    with:
+      package-name: '@ecainternational/eca-design-tokens'
 
   publish:
     name: Publish NPM Package
     runs-on: ubuntu-latest
     needs: update-release
     if: ${{ needs.update-release.outputs.release_created }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
+    steps:
+      - name: Checkout & Setup
+        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-and-setup.yml@1.0.2
         with:
           node-version: ${{env.NODE_VERSION}}
-          cache: 'npm'
-          registry-url: 'https://npm.pkg.github.com'
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Build
         run: npm run build
 
       - name: Publish NPM Package
-        run: |
-          npx clear-package-json package.json > dist/package.json --fields "type, files, private, publishConfig, peerDependencies, peerDependenciesMeta"
-          cd dist
-          npm publish
+        uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@1.0.2
+        with:
+          build-directory: dist
