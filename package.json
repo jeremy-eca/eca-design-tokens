@@ -1,6 +1,6 @@
 {
   "name": "@ecainternational/eca-design-tokens",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "ECA Design Tokens Library",
   "type": "module",
   "private": false,

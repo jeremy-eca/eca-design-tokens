@@ -1,5 +1,30 @@
 # Changelog
 
+## [1.0.11](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.10...v1.0.11) (2023-12-01)
+
+
+### Features
+
+* Move to reusable workflows ([3ffef8d](https://github.com/ECAInternational/eca-design-tokens/commit/3ffef8da2f1036202d48c7284745724565fa4669))
+* Move to reusables 1.0.3 ([9a8bc11](https://github.com/ECAInternational/eca-design-tokens/commit/9a8bc11ab63806e7d95de7cf0c460c0050f04376))
+* Use 1.0.4 reusables ([fb8df52](https://github.com/ECAInternational/eca-design-tokens/commit/fb8df52d14777e09b13238e7f9513c04b8e560bd))
+* Use 1.0.5 reusables ([14ccf15](https://github.com/ECAInternational/eca-design-tokens/commit/14ccf15d7b951fab3ecfc54ec565b36332d2b025))
+* Use 1.0.6 reusables ([eea829e](https://github.com/ECAInternational/eca-design-tokens/commit/eea829e2f9bdd813c0d5b3fbc06f44644fea903c))
+
+
+### Bug Fixes
+
+* Add v to reusuable versions ([de6a818](https://github.com/ECAInternational/eca-design-tokens/commit/de6a8189b4b89e1920ee5467c53076a7cdb446f2))
+* Change case of reusable ([5d00698](https://github.com/ECAInternational/eca-design-tokens/commit/5d0069807ce5e76c5e21c85c02ae39a9cb66631f))
+* Change case of reusable ([18e7b3e](https://github.com/ECAInternational/eca-design-tokens/commit/18e7b3e87699f0d6de2add2fdf81511cd9cbe64f))
+* Fix reusable name ([ace2103](https://github.com/ECAInternational/eca-design-tokens/commit/ace210348d38240c8bd44fdd70f6e4a174dd6df1))
+* Fix reusable path ([f540017](https://github.com/ECAInternational/eca-design-tokens/commit/f540017e83a854a20846544aea00de3f5d116e95))
+* Force rebuild ([7f47c53](https://github.com/ECAInternational/eca-design-tokens/commit/7f47c53f6693066abf7360bd63931921725cf63c))
+* Force rebuild ([3e2cc56](https://github.com/ECAInternational/eca-design-tokens/commit/3e2cc562a77a240dce3fec8ea7bc7525216c4293))
+* Force rebuild ([17f2161](https://github.com/ECAInternational/eca-design-tokens/commit/17f2161e6d7a4502437604f96ccacc902538d089))
+* Remove reusable usage from steps ([6f43053](https://github.com/ECAInternational/eca-design-tokens/commit/6f43053b934ec729cf965fdd94ff0675bd789bbe))
+* update permissions for jobs ([784f8ef](https://github.com/ECAInternational/eca-design-tokens/commit/784f8ef1903ceb68aa265aad759ef1570d9f03bb))
+
 ## [1.0.10](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.9...v1.0.10) (2023-11-29)
 
 
