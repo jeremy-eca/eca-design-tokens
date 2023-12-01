@@ -11,17 +11,23 @@ permissions:
   packages: write
 
 jobs:
-  build-lint:
-    name: Build & Lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  build-test:
+    name: Build & Test
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-setup-lint-build.yml@v1.0.12
+    secrets: inherit
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
+  update-release:
+    name: Update Release
+    needs: build-test
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@v1.0.12
+    with:
+      package-name: '@ecainternational/eca-design-tokens'
 
-      - name: Install dependencies
-        run: npm ci
+  publish:
+    name: Publish NPM Package
+    needs: update-release
+    if: ${{ needs.update-release.outputs.release_created }}
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@v1.0.12
+    with:
+      build-directory: dist
+    secrets: inherit
