@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.12](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.11...v1.0.12) (2023-12-01)
+
+
+### Features
+
+* Update permissions ([554bea9](https://github.com/ECAInternational/eca-design-tokens/commit/554bea981db2d0993c0d2ecb9fec4e2a0830689e))
+* Update reusable workflows to v1.0.7 ([0e30672](https://github.com/ECAInternational/eca-design-tokens/commit/0e30672e61b4edfde97b27b99ac04f859d09b284))
+
 ## [1.0.11](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.10...v1.0.11) (2023-12-01)
 
 
