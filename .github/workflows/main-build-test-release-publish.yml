@@ -24,6 +24,7 @@ jobs:
     name: Publish NPM Package
     needs: update-release
     permissions:
+      contents: read
       packages: write
     if: ${{ needs.update-release.outputs.release_created }}
     uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@v1.0.7
