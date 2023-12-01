@@ -14,7 +14,6 @@ jobs:
   build-test:
     name: Build & Test
     uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-setup-lint-build.yml@v1.0.7
-    secrets: inherit
 
   update-release:
     name: Update Release
