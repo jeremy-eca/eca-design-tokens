@@ -7,15 +7,15 @@
 
 * Add usage instructions to readme ([#16](https://github.com/ECAInternational/eca-design-tokens/issues/16)) ([a1da37d](https://github.com/ECAInternational/eca-design-tokens/commit/a1da37d967e1351b8e0f3c1d6b6931fc613522cf))
 
-## [1.0.12](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.11...v1.0.12) (2023-12-01)
+## [1.0.12](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.7...v1.0.12) (2023-12-01)
 
 
 ### Features
 
 * Update permissions ([554bea9](https://github.com/ECAInternational/eca-design-tokens/commit/554bea981db2d0993c0d2ecb9fec4e2a0830689e))
-* Update reusable workflows to v1.0.11 ([0e30672](https://github.com/ECAInternational/eca-design-tokens/commit/0e30672e61b4edfde97b27b99ac04f859d09b284))
+* Update reusable workflows to v1.0.7 ([0e30672](https://github.com/ECAInternational/eca-design-tokens/commit/0e30672e61b4edfde97b27b99ac04f859d09b284))
 
-## [1.0.11](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.10...v1.0.11) (2023-12-01)
+## [1.0.7](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.10...v1.0.7) (2023-12-01)
 
 
 ### Features
@@ -54,14 +54,14 @@
 
 * Trying to trigger build ([0af0549](https://github.com/ECAInternational/eca-design-tokens/commit/0af0549509f688819cc76e239f2d86f0c3d5a351))
 
-## [1.0.8](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.11...v1.0.8) (2023-11-24)
+## [1.0.8](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.7...v1.0.8) (2023-11-24)
 
 
 ### Features
 
 * Omprove readme ([41fb2a4](https://github.com/ECAInternational/eca-design-tokens/commit/41fb2a4a6cceff79228e06d62df8847ce16028e6))
 
-## [1.0.11](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.6...v1.0.11) (2023-11-24)
+## [1.0.7](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.6...v1.0.7) (2023-11-24)
 
 
 ### Features
