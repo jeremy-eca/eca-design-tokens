@@ -5,29 +5,28 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+
 jobs:
   build-test:
     name: Build & Test
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-setup-lint-build.yml@v1.0.7
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-setup-lint-build.yml@v1.0.11
 
   update-release:
     name: Update Release
     needs: build-test
-    permissions:
-      contents: write
-      pull-requests: write
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@v1.0.7
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@v1.0.11
     with:
       package-name: '@ecainternational/eca-design-tokens'
 
   publish:
     name: Publish NPM Package
     needs: update-release
-    permissions:
-      contents: read
-      packages: write
     if: ${{ needs.update-release.outputs.release_created }}
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@v1.0.7
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@v1.0.11
     with:
       build-directory: dist
     secrets: inherit
