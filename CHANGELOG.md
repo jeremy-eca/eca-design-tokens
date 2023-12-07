@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.15](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.14...v1.0.15) (2023-12-07)
+
+
+### Features
+
+* Ensure Aliases are maintained ([8830a98](https://github.com/ECAInternational/eca-design-tokens/commit/8830a988521615a583aafe0fc98343de1e35da03))
+* Import color definitions into theme files ([8830a98](https://github.com/ECAInternational/eca-design-tokens/commit/8830a988521615a583aafe0fc98343de1e35da03))
+
+
+### Bug Fixes
+
+* Add missing files ([c62fd38](https://github.com/ECAInternational/eca-design-tokens/commit/c62fd3806c17c8217411d948d61d01b6594bd826))
+
 ## [1.0.14](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.13...v1.0.14) (2023-12-01)
 
 
