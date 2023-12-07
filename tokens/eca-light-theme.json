@@ -129,7 +129,7 @@
   },
   "controls": {
     "border": {
-      "value": "{colors.neutral.600",
+      "value": "{colors.neutral.600}",
       "type": "color"
     },
     "border-hover": {
@@ -141,7 +141,7 @@
       "type": "color"
     },
     "content-focus": {
-      "value": "{colors.red.400}",
+      "value": "{colors.red.300}",
       "type": "color"
     },
     "border-focus": {
@@ -150,6 +150,22 @@
     },
     "placeholder-text": {
       "value": "{colors.neutral.700}",
+      "type": "color"
+    },
+    "bg-disabled": {
+      "value": "{colors.neutral.200}",
+      "type": "color"
+    },
+    "border-disabled": {
+      "value": "{colors.neutral.500}",
+      "type": "color"
+    },
+    "content-disabled": {
+      "value": "{colors.neutral.500}",
+      "type": "color"
+    },
+    "highlight-palest": {
+      "value": "{colors.blue.100}",
       "type": "color"
     }
   },

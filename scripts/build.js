@@ -1,8 +1,8 @@
 import StyleDictionaryModule from 'style-dictionary';
-import { tailwindFormat, daisyFormat } from './formatter.mjs';
+import { tailwindFormat, themeFormat } from './formatter.mjs';
 
 const brands = ['eca-brand'];
-const themes = ['eca-light', 'eca-dark'];
+const themes = ['eca-light-theme', 'eca-dark-theme'];
 
 StyleDictionaryModule.registerFormat({
   name: 'tailwind',
@@ -11,8 +11,8 @@ StyleDictionaryModule.registerFormat({
 });
 
 StyleDictionaryModule.registerFormat({
-  name: 'daisy',
-  formatter: ({ dictionary }) => daisyFormat({ dictionary })
+  name: 'theme',
+  formatter: ({ dictionary }) => themeFormat({ dictionary })
 });
 
 StyleDictionaryModule.registerTransform({
@@ -41,7 +41,11 @@ brands.forEach((brand) => {
 
 themes.forEach((theme) => {
   StyleDictionaryModule.extend({
-    include: ['tokens/*-brand.json', 'tokens/tailwind.json'],
+    include: [
+      'tokens/*-brand.json',
+      'tokens/eca-type.json',
+      'tokens/tailwind.json'
+    ],
     source: [`tokens/${theme}.json`],
     platforms: {
       daisy: {
@@ -50,7 +54,7 @@ themes.forEach((theme) => {
         files: [
           {
             destination: `${theme}.tailwind.js`,
-            format: 'daisy',
+            format: 'theme',
             filter: {
               isSource: true
             }

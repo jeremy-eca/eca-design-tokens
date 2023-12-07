@@ -151,6 +151,22 @@
     "placeholder-text": {
       "value": "{colors.neutral.300}",
       "type": "color"
+    },
+    "bg-disabled": {
+      "value": "{colors.neutral.700}",
+      "type": "color"
+    },
+    "border-disabled": {
+      "value": "{colors.neutral.600}",
+      "type": "color"
+    },
+    "content-disabled": {
+      "value": "{colors.neutral.600}",
+      "type": "color"
+    },
+    "highlight-palest": {
+      "value": "{colors.blue.900}",
+      "type": "color"
     }
   },
   "visualisation": {
