@@ -1,5 +1,27 @@
 # Changelog
 
+## [1.0.14](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.13...v1.0.14) (2023-12-01)
+
+
+### Features
+
+* Update gha permissions ([f3aa3bd](https://github.com/ECAInternational/eca-design-tokens/commit/f3aa3bdb3ac296969ebbf736cdb7c60d9c6ff031))
+
+
+### Bug Fixes
+
+* Fix package-lock.json ([2f986a8](https://github.com/ECAInternational/eca-design-tokens/commit/2f986a894cf4b529410e72154b954fa8d1556449))
+* Trying to fix build ([5f68987](https://github.com/ECAInternational/eca-design-tokens/commit/5f689871f4391a6ead1c701606313888e672d73e))
+* Trying to fix build ([b08a600](https://github.com/ECAInternational/eca-design-tokens/commit/b08a600516855091f7ed4ab3b0a22a658b877e47))
+* Trying to fix build ([3a99934](https://github.com/ECAInternational/eca-design-tokens/commit/3a999349929764aa358c80442b0d6fef7167d29d))
+* Trying v1.0.7 again ([73afc69](https://github.com/ECAInternational/eca-design-tokens/commit/73afc6909d5f7a99b9465e1053293b11b58ac5ba))
+* Update back to 1.0.12 ([2bd3710](https://github.com/ECAInternational/eca-design-tokens/commit/2bd3710df95290335cff44fcb36d50e94048b255))
+* Update back to 1.0.12 ([d63f54e](https://github.com/ECAInternational/eca-design-tokens/commit/d63f54ea8899af54ff45949c91d9696f381bebe3))
+* Update back to 1.0.7 ([f7a91cc](https://github.com/ECAInternational/eca-design-tokens/commit/f7a91cc726836c33ecd59ea19c680357e82d032f))
+* Update back to 1.0.7 ([6a88730](https://github.com/ECAInternational/eca-design-tokens/commit/6a8873088e1e4db9072429d0a6fc5d54d7841170))
+* Update back to 1.0.8 ([69d3355](https://github.com/ECAInternational/eca-design-tokens/commit/69d335564a715becc8ed8555338ad9bb2a688e85))
+* Update back to 1.0.9 ([2c0ae9c](https://github.com/ECAInternational/eca-design-tokens/commit/2c0ae9c9e7bef5ed2d29f4068e6003fa0383fabe))
+
 ## [1.0.13](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.12...v1.0.13) (2023-12-01)
 
 
