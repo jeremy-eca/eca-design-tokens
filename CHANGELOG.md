@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.17](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.16...v1.0.17) (2023-12-08)
+
+
+### Features
+
+* Add description to css ([d02e04f](https://github.com/ECAInternational/eca-design-tokens/commit/d02e04f3b5218e99ef97ec16e9d3de3a9cd84b18))
+* Use latest design tokens files ([d02e04f](https://github.com/ECAInternational/eca-design-tokens/commit/d02e04f3b5218e99ef97ec16e9d3de3a9cd84b18))
+
 ## [1.0.16](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.15...v1.0.16) (2023-12-08)
 
 
