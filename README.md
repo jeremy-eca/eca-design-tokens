@@ -54,5 +54,6 @@ To build the tokens manually, run the following commands:
 
 - `npm run build`: Convert tokens  
   This will convert the tokens for use in the following platforms:
-  - Tailwind (`build/tailwind`)
+  - Tailwind (`dist/tailwind`)
+  - CSS (`dist/css`)
   - More to come...

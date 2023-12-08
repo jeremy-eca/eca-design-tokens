@@ -21,6 +21,19 @@ StyleDictionaryModule.registerTransform({
   transformer: (token) => `${token.filePath} ${token.name}`
 });
 
+const CSSFormatter = StyleDictionaryModule.format['css/variables'];
+StyleDictionaryModule.registerFormat({
+  name: 'css/variables/design-tokens',
+  formatter: (dictionary, platform, file) => {
+    const output = CSSFormatter(dictionary, platform);
+    const comment =
+      '/**\n' +
+      ` * @tokens ${file.destination.split('.')[0]}\n` +
+      ' * @presenter Color\n */';
+    return comment + output;
+  }
+});
+
 brands.forEach((brand) => {
   StyleDictionaryModule.extend({
     source: [`tokens/${brand}.json`],
@@ -32,6 +45,22 @@ brands.forEach((brand) => {
           {
             destination: `${brand}.tailwind.js`,
             format: 'tailwind'
+          }
+        ]
+      }
+    }
+  }).buildAllPlatforms();
+
+  StyleDictionaryModule.extend({
+    source: [`tokens/${brand}.json`],
+    platforms: {
+      css: {
+        transforms: ['attribute/cti', 'name/cti/kebab'],
+        buildPath: 'dist/css/',
+        files: [
+          {
+            destination: `${brand}.css`,
+            format: 'css/variables/design-tokens'
           }
         ]
       }
@@ -55,6 +84,30 @@ themes.forEach((theme) => {
           {
             destination: `${theme}.tailwind.js`,
             format: 'theme',
+            filter: {
+              isSource: true
+            }
+          }
+        ]
+      }
+    }
+  }).buildAllPlatforms();
+
+  StyleDictionaryModule.extend({
+    include: [
+      'tokens/*-brand.json',
+      'tokens/eca-type.json',
+      'tokens/tailwind.json'
+    ],
+    source: [`tokens/${theme}.json`],
+    platforms: {
+      css: {
+        transforms: ['attribute/cti', 'name/cti/kebab'],
+        buildPath: 'dist/css/',
+        files: [
+          {
+            destination: `${theme}.css`,
+            format: 'css/variables/design-tokens',
             filter: {
               isSource: true
             }
