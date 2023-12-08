@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.16](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.15...v1.0.16) (2023-12-08)
+
+
+### Features
+
+* Export tokens to css ([17551e8](https://github.com/ECAInternational/eca-design-tokens/commit/17551e867092cb0e3d96bb64405693b0b654aad5))
+* Update readme ([adf8749](https://github.com/ECAInternational/eca-design-tokens/commit/adf87497d154dba774477c2aa39757760d9ca659))
+
 ## [1.0.15](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.14...v1.0.15) (2023-12-07)
 
 
