@@ -28,12 +28,14 @@ StyleDictionaryModule.registerFormat({
       '/**\n' +
       ` * @tokens ${file.destination.split('.')[0]}\n` +
       ' * @presenter Color\n */';
-    const output = `:root {\n${dictionary.allProperties.map(
-      (prop) =>
-        `  --${prop.name}: ${prop.value}; ${
-          prop.description ? `/* ${prop.description} */` : ''
-        } \n`
-    )}\n}`;
+    const output = `:root {\n${dictionary.allProperties
+      .map(
+        (prop) =>
+          `  --${prop.name}: ${prop.value}; ${
+            prop.description ? `/* ${prop.description} */` : ''
+          }`
+      )
+      .join('\n')}\n}`;
     return comment + output;
   }
 });
