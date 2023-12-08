@@ -21,15 +21,19 @@ StyleDictionaryModule.registerTransform({
   transformer: (token) => `${token.filePath} ${token.name}`
 });
 
-const CSSFormatter = StyleDictionaryModule.format['css/variables'];
 StyleDictionaryModule.registerFormat({
   name: 'css/variables/design-tokens',
   formatter: (dictionary, platform, file) => {
-    const output = CSSFormatter(dictionary, platform);
     const comment =
       '/**\n' +
       ` * @tokens ${file.destination.split('.')[0]}\n` +
       ' * @presenter Color\n */';
+    const output = `:root {\n${dictionary.allProperties.map(
+      (prop) =>
+        `  --${prop.name}: ${prop.value}; ${
+          prop.description ? `/* ${prop.description} */` : ''
+        } \n`
+    )}\n}`;
     return comment + output;
   }
 });
