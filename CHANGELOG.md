@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.18](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.17...v1.0.18) (2023-12-08)
+
+
+### Bug Fixes
+
+* Fix broken css ([13de1f3](https://github.com/ECAInternational/eca-design-tokens/commit/13de1f3d0e111627f95a54fe18ed9bb46e1e3cb5))
+
 ## [1.0.17](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.16...v1.0.17) (2023-12-08)
 
 
