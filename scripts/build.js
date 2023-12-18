@@ -1,5 +1,5 @@
 import StyleDictionaryModule from 'style-dictionary';
-import { tailwindFormat, themeFormat } from './formatter.mjs';
+import { tailwindFormat, themeFormat } from './formatters.mjs';
 
 const brands = ['eca-brand'];
 const themes = ['eca-light-theme', 'eca-dark-theme'];

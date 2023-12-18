@@ -37,17 +37,17 @@
     }
   },
   "neutral": {
-    "layer 1": {
+    "layer-1": {
       "value": "{colors.neutral.900}",
       "type": "color",
       "description": "page background"
     },
-    "layer 2": {
+    "layer-2": {
       "value": "{colors.neutral.800}",
       "type": "color",
       "description": "Cards"
     },
-    "layer 3": {
+    "layer-3": {
       "value": "{colors.neutral.700}",
       "type": "color",
       "description": "A third background for e.g. an area of a card"

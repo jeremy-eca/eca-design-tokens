@@ -322,5 +322,11 @@
         "type": "color"
       }
     }
+  },
+  "fontFamily": {
+    "sans": {
+      "value": "Gotham Narrow",
+      "type": "fontFamilies"
+    }
   }
 }

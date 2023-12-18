@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
-export const tailwindFormat = ({ dictionary: { allTokens }, isVariables }) => {
-  const tokens = allTokens.reduce((acc, cur) => {
-    acc[cur.path.join('.')] = isVariables ? `var(--${cur.name})` : cur.value;
+export const tailwindFormat = ({ dictionary: { allTokens } }) => {
+  const tokens = allTokens.reduce((acc, token) => {
+    acc[token.path.join('.')] = token.value;
     return acc;
   }, {});
 
@@ -16,11 +16,11 @@ export const tailwindFormat = ({ dictionary: { allTokens }, isVariables }) => {
 };
 
 export const themeFormat = ({ dictionary: { allTokens } }) => {
-  const tokens = allTokens.reduce((acc, cur) => {
-    const name = cur.path.join('.');
+  const tokens = allTokens.reduce((acc, token) => {
+    const name = token.path.join('.');
 
     //Ensure we keep aliases
-    acc[name] = cur.original.value.replace(/^{(.*)}$/, '$1');
+    acc[name] = token.original.value.replace(/^{(.*)}$/, '$1');
 
     return acc;
   }, {});
