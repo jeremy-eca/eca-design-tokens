@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.19](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.18...v1.0.19) (2023-12-18)
+
+
+### Features
+
+* Add docs link to Readme ([212a82e](https://github.com/ECAInternational/eca-design-tokens/commit/212a82eb31008b780d918e25447c3c21fe5b79a8))
+* Update tokens ([6fd0e9e](https://github.com/ECAInternational/eca-design-tokens/commit/6fd0e9e185f3a79635a580baddb64f327e586e65))
+
 ## [1.0.18](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.17...v1.0.18) (2023-12-08)
 
 
