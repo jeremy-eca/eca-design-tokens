@@ -157,7 +157,7 @@
       "type": "color"
     },
     "border-disabled": {
-      "value": "{colors.neutral.500}",
+      "value": "{neutral.detail-paler}",
       "type": "color"
     },
     "content-disabled": {
