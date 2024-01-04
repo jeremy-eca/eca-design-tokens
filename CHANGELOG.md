@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.20](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.19...v1.0.20) (2024-01-04)
+
+
+### Features
+
+* Addition of radio buttons - associated changes ([#27](https://github.com/ECAInternational/eca-design-tokens/issues/27)) ([874cfab](https://github.com/ECAInternational/eca-design-tokens/commit/874cfabb6b91a995f29fb2cbf26949e491e0ffdb))
+* Addition of text fields and related changes to tokens. ([#26](https://github.com/ECAInternational/eca-design-tokens/issues/26)) ([c5e3655](https://github.com/ECAInternational/eca-design-tokens/commit/c5e3655e3453bdd404d8a0d1295aa69a0a69559f))
+* Upgrade to reusables 1.0.15 ([5c50552](https://github.com/ECAInternational/eca-design-tokens/commit/5c5055211993bfa37ed4e1f3bf4588e1e4d42489))
+
 ## [1.0.19](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.18...v1.0.19) (2023-12-18)
 
 
