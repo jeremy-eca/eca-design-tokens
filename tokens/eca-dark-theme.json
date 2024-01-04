@@ -136,15 +136,7 @@
       "value": "{colors.neutral.300}",
       "type": "color"
     },
-    "bg-focus": {
-      "value": "{colors.neutral.50}",
-      "type": "color"
-    },
-    "content-focus": {
-      "value": "{colors.red.600}",
-      "type": "color"
-    },
-    "border-focus": {
+    "highlight": {
       "value": "{colors.blue.500}",
       "type": "color"
     },
@@ -166,6 +158,14 @@
     },
     "highlight-palest": {
       "value": "{colors.blue.900}",
+      "type": "color"
+    },
+    "highlight-pale": {
+      "value": "{colors.blue.700}",
+      "type": "color"
+    },
+    "highlight-paler": {
+      "value": "{colors.blue.800}",
       "type": "color"
     }
   },
