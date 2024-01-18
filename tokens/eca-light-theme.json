@@ -169,6 +169,10 @@
     "highlight-paler": {
       "value": "{colors.blue.200}",
       "type": "color"
+    },
+    "highlight-bold": {
+      "value": "{colors.blue.600}",
+      "type": "color"
     }
   },
   "visualisation": {
