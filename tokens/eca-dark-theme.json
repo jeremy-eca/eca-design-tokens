@@ -30,6 +30,11 @@
       "type": "color",
       "description": "A slightly bolder variant of our primary colour for primary coloured text (accessibility)"
     },
+    "bolder": {
+      "value": "{colors.red.200}",
+      "type": "color",
+      "description": "A slightly bolder variant of our primary colour for primary coloured text (accessibility)"
+    },
     "boldest": {
       "value": "{colors.red.100}",
       "type": "color",
@@ -136,10 +141,6 @@
       "value": "{colors.neutral.300}",
       "type": "color"
     },
-    "highlight": {
-      "value": "{colors.blue.500}",
-      "type": "color"
-    },
     "placeholder-text": {
       "value": "{colors.neutral.300}",
       "type": "color"
@@ -156,8 +157,12 @@
       "value": "{colors.neutral.600}",
       "type": "color"
     },
-    "highlight-palest": {
-      "value": "{colors.blue.900}",
+    "highlight-bold": {
+      "value": "{colors.blue.400}",
+      "type": "color"
+    },
+    "highlight": {
+      "value": "{colors.blue.500}",
       "type": "color"
     },
     "highlight-pale": {
@@ -168,8 +173,8 @@
       "value": "{colors.blue.800}",
       "type": "color"
     },
-    "highlight-bold": {
-      "value": "{colors.blue.400}",
+    "highlight-palest": {
+      "value": "{colors.blue.900}",
       "type": "color"
     }
   },

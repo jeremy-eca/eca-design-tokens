@@ -330,6 +330,14 @@
     "3,5": {
       "value": "{spacing.3,5}",
       "type": "sizing"
+    },
+    "4,5": {
+      "value": "{spacing.4,5}",
+      "type": "sizing"
+    },
+    "5,5": {
+      "value": "{spacing.5,5}",
+      "type": "sizing"
     }
   },
   "spacing": {
@@ -471,6 +479,14 @@
     },
     "3,5": {
       "value": "{fontSize.base} * 0.875",
+      "type": "spacing"
+    },
+    "4,5": {
+      "value": "{fontSize.base} * 1.125",
+      "type": "spacing"
+    },
+    "5,5": {
+      "value": "{fontSize.base} * 1.375",
       "type": "spacing"
     },
     "test-rem": {
