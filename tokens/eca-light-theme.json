@@ -150,7 +150,7 @@
       "description": "buttons only"
     },
     "border-disabled": {
-      "value": "{neutral.detail-paler}",
+      "value": "{colors.neutral.300}",
       "type": "color",
       "description": "Buttons only"
     },
