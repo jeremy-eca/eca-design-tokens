@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.21](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.20...v1.0.21) (2024-01-23)
+
+
+### Features
+
+* Addition of primary-bold and some new sizing/spacing tokens ([#31](https://github.com/ECAInternational/eca-design-tokens/issues/31)) ([6f9b395](https://github.com/ECAInternational/eca-design-tokens/commit/6f9b3950489bc08da1ae17b910464419a6dcf836))
+
+
+### Bug Fixes
+
+* amend to controls.border-disabled ([#30](https://github.com/ECAInternational/eca-design-tokens/issues/30)) ([cb85e32](https://github.com/ECAInternational/eca-design-tokens/commit/cb85e32f24538d3377752c820ddf492acd875d92))
+
 ## [1.0.20](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.19...v1.0.20) (2024-01-04)
 
 
