@@ -54,6 +54,10 @@
       "900": {
         "value": "#1D252D",
         "type": "color"
+      },
+      "1000": {
+        "value": "#161C22",
+        "type": "color"
       }
     },
     "red": {
