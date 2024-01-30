@@ -123,6 +123,14 @@
       "value": "{colors.pink.500}",
       "type": "color"
     },
+    "error-bold": {
+      "value": "{colors.pink.700}",
+      "type": "color"
+    },
+    "error-palest": {
+      "value": "{colors.pink.100}",
+      "type": "color"
+    },
     "success": {
       "value": "{colors.green.200}",
       "type": "color"
