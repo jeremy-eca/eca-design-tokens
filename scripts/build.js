@@ -81,7 +81,7 @@ themes.forEach((theme) => {
       'tokens/eca-type.json',
       'tokens/tailwind.json'
     ],
-    source: [`tokens/${theme}.json`],
+    source: [`tokens/theme/${theme}.json`],
     platforms: {
       daisy: {
         transforms: ['attribute/cti', 'name/cti/kebab'],
@@ -105,7 +105,7 @@ themes.forEach((theme) => {
       'tokens/eca-type.json',
       'tokens/tailwind.json'
     ],
-    source: [`tokens/${theme}.json`],
+    source: [`tokens/theme/${theme}.json`],
     platforms: {
       css: {
         transforms: ['attribute/cti', 'name/cti/kebab'],
