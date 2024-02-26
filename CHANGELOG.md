@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.22](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.21...v1.0.22) (2024-02-26)
+
+
+### Features
+
+* Restructure of themes ([d63762a](https://github.com/ECAInternational/eca-design-tokens/commit/d63762aa5ce98c941879183d7fef8456c4fb4f86))
+
+
+### Bug Fixes
+
+* Fix build after restructure ([#38](https://github.com/ECAInternational/eca-design-tokens/issues/38)) ([447ca3b](https://github.com/ECAInternational/eca-design-tokens/commit/447ca3b0c95e86f77647092becf3a16910b83a4d))
+
 ## [1.0.21](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.20...v1.0.21) (2024-01-23)
 
 
