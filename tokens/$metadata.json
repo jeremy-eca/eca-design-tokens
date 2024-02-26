@@ -1,8 +1,8 @@
 {
   "tokenSetOrder": [
     "eca-brand",
-    "eca-dark-theme",
-    "eca-light-theme",
-    "tailwind"
+    "tailwind",
+    "theme/eca-dark-theme",
+    "theme/eca-light-theme"
   ]
 }

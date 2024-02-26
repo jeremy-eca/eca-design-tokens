@@ -1,0 +1,648 @@
+{
+  "primary": {
+    "palest": {
+      "value": "{colors.red.900}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Variant of our primary color closest to the background"
+    },
+    "paler": {
+      "value": "{colors.red.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Variant of our primary color second closest to the background"
+    },
+    "pale": {
+      "value": "{colors.red.700}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Variant of our primary color third closest to the background"
+    },
+    "accent": {
+      "value": "{colors.red.600}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Hover states, focus states, accents"
+    },
+    "main": {
+      "value": "{colors.red.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Main shade of our primary color for use on buttons, primary details"
+    },
+    "bold": {
+      "value": "{colors.red.300}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "A slightly bolder variant of our primary colour for primary coloured text (accessibility)"
+    },
+    "bolder": {
+      "value": "{colors.red.200}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "A slightly bolder variant of our primary colour for primary coloured text (accessibility)"
+    },
+    "boldest": {
+      "value": "{colors.red.100}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Our darkest variant of the primary colour in light mode, or lightest in dark mode"
+    }
+  },
+  "neutral": {
+    "layer-1": {
+      "value": "{colors.neutral.900}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "page background"
+    },
+    "layer-2": {
+      "value": "{colors.neutral.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Cards"
+    },
+    "layer-3": {
+      "value": "{colors.neutral.700}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "A third background for e.g. an area of a card"
+    },
+    "detail-palest": {
+      "value": "{colors.neutral.700}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Disabled controls, switch tracks, very faint details or an extra layer of background if ever required"
+    },
+    "detail-paler": {
+      "value": "{colors.neutral.600}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Horizontal rules, axes, disabled controls"
+    },
+    "detail-pale": {
+      "value": "{colors.neutral.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Connector lines"
+    },
+    "detail": {
+      "value": "{colors.neutral.400}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Controls, neutral icons"
+    },
+    "detail-bold": {
+      "value": "{colors.neutral.300}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "tbc"
+    },
+    "detail-bolder": {
+      "value": "{colors.neutral.200}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Large figures"
+    },
+    "detail-boldest": {
+      "value": "{colors.neutral.100}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "tbc"
+    },
+    "body": {
+      "value": "{colors.neutral.50}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "body copy"
+    }
+  },
+  "states": {
+    "info-boldest": {
+      "value": "{colors.blue.100}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "info": {
+      "value": "{colors.blue.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "info-paler": {
+      "value": "{colors.blue.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "warning-boldest": {
+      "value": "{colors.yellow.100}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "warning": {
+      "value": "{colors.yellow.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "warning-paler": {
+      "value": "{colors.yellow.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "error-boldest": {
+      "value": "{colors.pink.100}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "error-bold": {
+      "value": "{colors.pink.300}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "error": {
+      "value": "{colors.pink.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "error-paler": {
+      "value": "{colors.pink.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "error-palest": {
+      "value": "{colors.pink.900}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "succes-boldest": {
+      "value": "{colors.green.100}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "success-bold": {
+      "value": "{colors.green.300}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "success": {
+      "value": "{colors.green.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "success-paler": {
+      "value": "{colors.green.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "success-palest": {
+      "value": "{colors.green.900}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    }
+  },
+  "controls": {
+    "border": {
+      "value": "{colors.neutral.400}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "border-hover": {
+      "value": "{colors.neutral.300}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "placeholder-text": {
+      "value": "{colors.neutral.300}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "bg-disabled": {
+      "value": "{colors.neutral.700}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "buttons only"
+    },
+    "border-disabled": {
+      "value": "{colors.neutral.600}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": "Buttons only"
+    },
+    "content-disabled": {
+      "value": "{colors.neutral.600}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight-bolder": {
+      "value": "{colors.blue.200}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight-bold": {
+      "value": "{colors.blue.400}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight": {
+      "value": "{colors.blue.500}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight-pale": {
+      "value": "{colors.blue.700}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight-paler": {
+      "value": "{colors.blue.800}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight-palest": {
+      "value": "{colors.blue.900}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "bg-unselected": {
+      "value": "{colors.neutral.1000}",
+      "type": "color"
+    }
+  },
+  "visualisation": {
+    "1": {
+      "boldest": {
+        "value": "{colors.orange.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.orange.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.orange.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.orange.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.orange.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.orange.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.orange.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.orange.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    },
+    "2": {
+      "boldest": {
+        "value": "{colors.yellow.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.yellow.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.yellow.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.yellow.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.yellow.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.yellow.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.yellow.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.yellow.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    },
+    "3": {
+      "boldest": {
+        "value": "{colors.green.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.green.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.green.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.green.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.green.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.green.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.green.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.green.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    },
+    "4": {
+      "boldest": {
+        "value": "{colors.blue.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.blue.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.blue.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.blue.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.blue.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.blue.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.blue.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.blue.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    },
+    "5": {
+      "boldest": {
+        "value": "{colors.purple.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.purple.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.purple.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.purple.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.purple.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.purple.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.purple.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.purple.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    },
+    "6": {
+      "boldest": {
+        "value": "{colors.pink.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.pink.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.pink.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.pink.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.pink.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.pink.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.pink.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.pink.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    },
+    "7": {
+      "boldest": {
+        "value": "{colors.red.100}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bolder": {
+        "value": "{colors.red.200}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "bold": {
+        "value": "{colors.red.300}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "accent": {
+        "value": "{colors.red.400}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "main": {
+        "value": "{colors.red.500}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "pale": {
+        "value": "{colors.red.700}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "paler": {
+        "value": "{colors.red.800}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      },
+      "palest": {
+        "value": "{colors.red.900}",
+        "type": "color",
+        "parent": "eca/dark",
+        "description": "tbc"
+      }
+    }
+  }
+}
