@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.23](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.22...v1.0.23) (2024-03-15)
+
+
+### Bug Fixes
+
+* Update reusables ([#40](https://github.com/ECAInternational/eca-design-tokens/issues/40)) ([01db9c3](https://github.com/ECAInternational/eca-design-tokens/commit/01db9c306e8eb115edc3d5177415e2a264919519))
+* Update reusables ([#41](https://github.com/ECAInternational/eca-design-tokens/issues/41)) ([18e9fe9](https://github.com/ECAInternational/eca-design-tokens/commit/18e9fe9dfc6a10909eaf237aba1ff54dfd06ef83))
+
 ## [1.0.22](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.21...v1.0.22) (2024-02-26)
 
 
