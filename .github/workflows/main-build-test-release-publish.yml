@@ -13,21 +13,21 @@ permissions:
 jobs:
   build-test:
     name: Build & Test
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-setup-lint-build.yml@v1.0.15
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-checkout-setup-lint-build.yml@v1.0.20
     secrets: inherit
 
   update-release:
     name: Update Release
     needs: build-test
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@v1.0.15
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-update-release.yml@v1.0.20
     with:
-      package-name: '@ecainternational/eca-design-tokens'
+      release-type: 'node'
 
   publish:
     name: Publish NPM Package
     needs: update-release
-    if: ${{ needs.update-release.outputs.release_created }}
-    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@v1.0.15
+    if: ${{ needs.update-release.outputs.release-created }}
+    uses: ECAInternational/eca-reusable-workflows/.github/workflows/js-publish-npm-package.yml@v1.0.20
     with:
       build-directory: dist
     secrets: inherit
