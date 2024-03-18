@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.24](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.23...v1.0.24) (2024-03-18)
+
+
+### Features
+
+* Addition of typography ([#43](https://github.com/ECAInternational/eca-design-tokens/issues/43)) ([e6146df](https://github.com/ECAInternational/eca-design-tokens/commit/e6146df754525615dfd94630cbfa97671cb60c61))
+
 ## [1.0.23](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.22...v1.0.23) (2024-03-15)
 
 
