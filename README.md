@@ -27,7 +27,6 @@ different themes for your application.
 
 ```js
 const { createThemes } = require('tw-colors');
-import myBrand from '@ecainternational/eca-design-tokens/tailwind/my-brand.tailwind';
 import myLightTheme from '@ecainternational/eca-design-tokens/tailwind/my-dark-theme.tailwind';
 import myDarkTheme from '@ecainternational/eca-design-tokens/tailwind/my-light-theme.tailwind';
 
@@ -36,9 +35,6 @@ export default {
     './app/**/*.{js,jsx,ts,tsx}',
     './node_modules/@ecainternational/eca-components/**/*.js'
   ],
-  theme: {
-    ...myBrand
-  },
   plugins: [
     createThemes(
             {
