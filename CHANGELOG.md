@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.26](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.25...v1.0.26) (2024-03-19)
+
+
+### Bug Fixes
+
+* update readme. ([#50](https://github.com/ECAInternational/eca-design-tokens/issues/50)) ([2fdde0a](https://github.com/ECAInternational/eca-design-tokens/commit/2fdde0a05e950150075c78e2bd8feecc93785adf))
+
 ## [1.0.25](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.24...v1.0.25) (2024-03-18)
 
 
