@@ -637,7 +637,7 @@
       },
       "type": "typography"
     },
-    "lg-regular": {
+    "lg-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.8xl}",
@@ -664,7 +664,7 @@
       },
       "type": "typography"
     },
-    "md-regular": {
+    "md-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.7xl}",
@@ -691,7 +691,7 @@
       },
       "type": "typography"
     },
-    "sm-regular": {
+    "sm-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.6xl}",
@@ -718,7 +718,7 @@
       },
       "type": "typography"
     },
-    "xs-regular": {
+    "xs-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.5xl}",
@@ -747,7 +747,7 @@
       },
       "type": "typography"
     },
-    "xl-regular": {
+    "xl-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.4xl}",
@@ -774,7 +774,7 @@
       },
       "type": "typography"
     },
-    "lg-regular": {
+    "lg-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.3xl}",
@@ -801,7 +801,7 @@
       },
       "type": "typography"
     },
-    "md-regular": {
+    "md-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.2xl}",
@@ -828,7 +828,7 @@
       },
       "type": "typography"
     },
-    "sm-regular": {
+    "sm-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.xl}",
@@ -855,7 +855,7 @@
       },
       "type": "typography"
     },
-    "xs-regular": {
+    "xs-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.lg}",
@@ -884,7 +884,7 @@
       },
       "type": "typography"
     },
-    "lg-regular": {
+    "lg-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.lg}",
@@ -911,7 +911,7 @@
       },
       "type": "typography"
     },
-    "md-regular": {
+    "md-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.base}",
@@ -938,7 +938,7 @@
       },
       "type": "typography"
     },
-    "sm-regular": {
+    "sm-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.sm}",
@@ -965,7 +965,7 @@
       },
       "type": "typography"
     },
-    "xs-regular": {
+    "xs-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.xs}",
@@ -994,7 +994,7 @@
       },
       "type": "typography"
     },
-    "lg-regular": {
+    "lg-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.lg}",
@@ -1021,7 +1021,7 @@
       },
       "type": "typography"
     },
-    "md-regular": {
+    "md-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.base}",
@@ -1048,7 +1048,7 @@
       },
       "type": "typography"
     },
-    "sm-regular": {
+    "sm-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.sm}",
@@ -1075,7 +1075,7 @@
       },
       "type": "typography"
     },
-    "xs-regular": {
+    "xs-mid": {
       "value": {
         "fontFamily": "Bricolage Grotesque",
         "fontSize": "{fontSize.xs}",
@@ -1095,7 +1095,7 @@
     }
   },
   "default": {
-    "value": "120%",
+    "value": "140%",
     "type": "lineHeights"
   }
 }
