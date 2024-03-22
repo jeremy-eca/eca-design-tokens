@@ -40,6 +40,58 @@ StyleDictionaryModule.registerFormat({
   }
 });
 
+StyleDictionaryModule.registerTransform({
+  type: 'value',
+  transitive: true,
+  name: 'css/flatten-properties',
+  matcher: ({ type }) => ['typography'].includes(type),
+  transformer: ({ value, name, type }) => {
+    if (!value) return '';
+
+    const entries = Object.entries(value);
+
+    const flattenedValue = entries
+      .map(([key, v], index) => {
+        const transformedValue = StyleDictionaryModule.transform[
+          'css/evaluate-multiplication'
+        ].transformer({ value: v });
+
+        return `--${name}-${StyleDictionaryModule.transform[
+          'name/cti/kebab'
+        ].transformer({ path: [key] }, { prefix: '' })}: ${transformedValue}${
+          index + 1 === entries.length ? '' : ';'
+        }`;
+      })
+      .join('\n  ');
+
+    return `${
+      name.includes(type) ? '' : `${type}-`
+    }${name}-group;\n  ${flattenedValue}`;
+  }
+});
+
+StyleDictionaryModule.registerTransform({
+  type: 'value',
+  name: 'css/evaluate-multiplication',
+  transitive: true,
+  transformer: (test) => {
+    const { value } = test;
+
+    if (
+      typeof value !== 'object' &&
+      typeof value === 'string' &&
+      value.includes('*')
+    ) {
+      const [num1, num2] = value.split('*').map(Number);
+      const result = num1 * num2;
+
+      return result.toString();
+    }
+
+    return value;
+  }
+});
+
 brands.forEach((brand) => {
   StyleDictionaryModule.extend({
     source: [`tokens/${brand}.json`],
@@ -61,7 +113,12 @@ brands.forEach((brand) => {
     source: [`tokens/${brand}.json`],
     platforms: {
       css: {
-        transforms: ['attribute/cti', 'name/cti/kebab'],
+        transforms: [
+          'attribute/cti',
+          'name/cti/kebab',
+          'css/flatten-properties',
+          'css/evaluate-multiplication'
+        ],
         buildPath: 'dist/css/',
         files: [
           {
@@ -108,7 +165,12 @@ themes.forEach((theme) => {
     source: [`tokens/theme/${theme}.json`],
     platforms: {
       css: {
-        transforms: ['attribute/cti', 'name/cti/kebab'],
+        transforms: [
+          'attribute/cti',
+          'name/cti/kebab',
+          'css/flatten-properties',
+          'css/evaluate-multiplication'
+        ],
         buildPath: 'dist/css/',
         files: [
           {

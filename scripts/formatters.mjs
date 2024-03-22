@@ -52,6 +52,7 @@ const makeNestedObject = (obj, keys, value) => {
   }
 
   //replace any numbers in value with ['NUMBER'] to make valid JS
-  obj[keys[lastIndex]] = value.replace(/\.(\d+)/g, "['$1']");
+  obj[keys[lastIndex]] =
+    typeof value !== 'object' ? value.replace(/\.(\d+)/g, "['$1']") : value;
 };
 /* eslint-enable no-param-reassign */
