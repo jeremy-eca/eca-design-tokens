@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.27](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.26...v1.0.27) (2024-03-22)
+
+
+### Features
+
+* Moving typography out of TW ([#52](https://github.com/ECAInternational/eca-design-tokens/issues/52)) ([eb0ae5e](https://github.com/ECAInternational/eca-design-tokens/commit/eb0ae5e9153ccb9538e0201bcd8636e7796b2a58))
+
 ## [1.0.26](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.25...v1.0.26) (2024-03-19)
 
 
