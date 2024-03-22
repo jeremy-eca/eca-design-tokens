@@ -1,99 +1,10 @@
-import StyleDictionaryModule from 'style-dictionary';
-import { tailwindFormat, themeFormat } from './formatters.mjs';
+import StyleDictionary from './style-dictionary-factory.mjs';
 
 const brands = ['eca-brand'];
 const themes = ['eca-light-theme', 'eca-dark-theme'];
 
-StyleDictionaryModule.registerFormat({
-  name: 'tailwind',
-  formatter: ({ dictionary }) =>
-    tailwindFormat({ dictionary, isVariables: false })
-});
-
-StyleDictionaryModule.registerFormat({
-  name: 'theme',
-  formatter: ({ dictionary }) => themeFormat({ dictionary })
-});
-
-StyleDictionaryModule.registerTransform({
-  type: 'name',
-  name: 'themeTransform',
-  transformer: (token) => `${token.filePath} ${token.name}`
-});
-
-StyleDictionaryModule.registerFormat({
-  name: 'css/variables/design-tokens',
-  formatter: (dictionary, platform, file) => {
-    const comment =
-      '/**\n' +
-      ` * @tokens ${file.destination.split('.')[0]}\n` +
-      ' * @presenter Color\n */';
-    const output = `:root {\n${dictionary.allProperties
-      .map(
-        (prop) =>
-          `  --${prop.name}: ${prop.value}; ${
-            prop.description ? `/* ${prop.description} */` : ''
-          }`
-      )
-      .join('\n')}\n}`;
-    return comment + output;
-  }
-});
-
-StyleDictionaryModule.registerTransform({
-  type: 'value',
-  transitive: true,
-  name: 'css/flatten-properties',
-  matcher: ({ type }) => ['typography'].includes(type),
-  transformer: ({ value, name, type }) => {
-    if (!value) return '';
-
-    const entries = Object.entries(value);
-
-    const flattenedValue = entries
-      .map(([key, v], index) => {
-        const transformedValue = StyleDictionaryModule.transform[
-          'css/evaluate-multiplication'
-        ].transformer({ value: v });
-
-        return `--${name}-${StyleDictionaryModule.transform[
-          'name/cti/kebab'
-        ].transformer({ path: [key] }, { prefix: '' })}: ${transformedValue}${
-          index + 1 === entries.length ? '' : ';'
-        }`;
-      })
-      .join('\n  ');
-
-    return `${
-      name.includes(type) ? '' : `${type}-`
-    }${name}-group;\n  ${flattenedValue}`;
-  }
-});
-
-StyleDictionaryModule.registerTransform({
-  type: 'value',
-  name: 'css/evaluate-multiplication',
-  transitive: true,
-  transformer: (test) => {
-    const { value } = test;
-
-    if (
-      typeof value !== 'object' &&
-      typeof value === 'string' &&
-      value.includes('*')
-    ) {
-      const [num1, num2] = value.split('*').map(Number);
-      const result = num1 * num2;
-
-      return result.toString();
-    }
-
-    return value;
-  }
-});
-
 brands.forEach((brand) => {
-  StyleDictionaryModule.extend({
+  StyleDictionary.extend({
     source: [`tokens/${brand}.json`],
     platforms: {
       tailwind: {
@@ -109,7 +20,7 @@ brands.forEach((brand) => {
     }
   }).buildAllPlatforms();
 
-  StyleDictionaryModule.extend({
+  StyleDictionary.extend({
     source: [`tokens/${brand}.json`],
     platforms: {
       css: {
@@ -132,7 +43,7 @@ brands.forEach((brand) => {
 });
 
 themes.forEach((theme) => {
-  StyleDictionaryModule.extend({
+  StyleDictionary.extend({
     include: [
       'tokens/*-brand.json',
       'tokens/eca-type.json',
@@ -156,7 +67,7 @@ themes.forEach((theme) => {
     }
   }).buildAllPlatforms();
 
-  StyleDictionaryModule.extend({
+  StyleDictionary.extend({
     include: [
       'tokens/*-brand.json',
       'tokens/eca-type.json',
