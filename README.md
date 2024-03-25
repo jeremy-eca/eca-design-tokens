@@ -1,6 +1,6 @@
 # ECA Design Tokens
 
-This repository contains the design tokens for the ECA Design System in the `tokens` folder.
+This repository contains the design tokens for the ECA Design System in the `tokens` folder
 
 The build script `scripts/build.js` converts the design tokens for use in different platforms using [Style Dictionary](https://amzn.github.io/style-dictionary) 
 
