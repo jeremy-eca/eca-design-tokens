@@ -8,7 +8,11 @@ brands.forEach((brand) => {
     source: [`tokens/${brand}.json`],
     platforms: {
       tailwind: {
-        transforms: ['attribute/cti', 'name/cti/kebab'],
+        transforms: [
+          'attribute/cti',
+          'name/cti/kebab',
+          'css/evaluate-multiplication'
+        ],
         buildPath: 'dist/tailwind/',
         files: [
           {
@@ -52,7 +56,11 @@ themes.forEach((theme) => {
     source: [`tokens/theme/${theme}.json`],
     platforms: {
       daisy: {
-        transforms: ['attribute/cti', 'name/cti/kebab'],
+        transforms: [
+          'attribute/cti',
+          'name/cti/kebab',
+          'css/evaluate-multiplication'
+        ],
         buildPath: 'dist/tailwind/',
         files: [
           {

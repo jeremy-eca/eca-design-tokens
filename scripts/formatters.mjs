@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 export const tailwindFormat = ({ dictionary: { allTokens } }) => {
   const tokens = allTokens.reduce((acc, token) => {
-    acc[token.path.join('.')] = token.value;
+    acc[token.path.join('.')] = { value: token.value, type: token.type };
     return acc;
   }, {});
 
@@ -20,7 +20,10 @@ export const themeFormat = ({ dictionary: { allTokens } }) => {
     const name = token.path.join('.');
 
     //Ensure we keep aliases
-    acc[name] = token.original.value.replace(/^{(.*)}$/, '$1');
+    acc[name] = {
+      value: token.original.value.replace(/^{(.*)}$/, '$1'),
+      type: token.type
+    };
 
     return acc;
   }, {});
@@ -41,7 +44,7 @@ export const themeFormat = ({ dictionary: { allTokens } }) => {
   module.exports = ${content}`;
 };
 
-const makeNestedObject = (obj, keys, value) => {
+const makeNestedObject = (obj, keys, token) => {
   const lastIndex = keys.length - 1;
   for (let i = 0; i < lastIndex; i += 1) {
     const key = keys[i];
@@ -52,7 +55,16 @@ const makeNestedObject = (obj, keys, value) => {
   }
 
   //replace any numbers in value with ['NUMBER'] to make valid JS
-  obj[keys[lastIndex]] =
-    typeof value !== 'object' ? value.replace(/\.(\d+)/g, "['$1']") : value;
+  let val =
+    typeof token.value !== 'object'
+      ? token.value.replace(/\.(\d+)/g, "['$1']")
+      : token.value;
+
+  //Append px to any typography fonxtSizes
+  if (token.type === 'typography') {
+    val = { ...val, fontSize: `${val.fontSize}px` };
+  }
+
+  obj[keys[lastIndex]] = val;
 };
 /* eslint-enable no-param-reassign */
