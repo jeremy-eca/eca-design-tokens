@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.29](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.28...v1.0.29) (2024-03-25)
+
+
+### Bug Fixes
+
+* Export typography properly ([#56](https://github.com/ECAInternational/eca-design-tokens/issues/56)) ([c81d683](https://github.com/ECAInternational/eca-design-tokens/commit/c81d683534ca6813c74dc5ad12672384b54cb90f))
+
 ## [1.0.28](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.27...v1.0.28) (2024-03-22)
 
 
