@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.31](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.30...v1.0.31) (2024-03-26)
+
+
+### Bug Fixes
+
+* Fix fontSizes ([#61](https://github.com/ECAInternational/eca-design-tokens/issues/61)) ([6bf1eda](https://github.com/ECAInternational/eca-design-tokens/commit/6bf1edabad9cbd738202e503d3011fe3ba24ca1f))
+
 ## [1.0.30](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.29...v1.0.30) (2024-03-25)
 
 
