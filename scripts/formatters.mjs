@@ -60,9 +60,14 @@ const makeNestedObject = (obj, keys, token) => {
       ? token.value.replace(/\.(\d+)/g, "['$1']")
       : token.value;
 
-  //Append px to any typography fonxtSizes
+  //Append px to any typography
   if (token.type === 'typography') {
     val = { ...val, fontSize: `${val.fontSize}px` };
+  }
+
+  //Append px to any fontSizes
+  if (token.type === 'fontSizes') {
+    val = `${val}px`;
   }
 
   obj[keys[lastIndex]] = val;

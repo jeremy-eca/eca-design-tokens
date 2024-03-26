@@ -88,9 +88,10 @@ StyleDictionary.registerTransform({
 
 StyleDictionary.registerTransform({
   type: 'value',
-  name: 'css/evaluate-multiplication',
+  name: 'evaluate-multiplication',
   transitive: true,
-  transformer: ({ value }) => {
+  transformer: (token) => {
+    let { value } = token;
     if (
       typeof value !== 'object' &&
       typeof value === 'string' &&

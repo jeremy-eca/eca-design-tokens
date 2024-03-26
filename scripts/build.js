@@ -11,7 +11,7 @@ brands.forEach((brand) => {
         transforms: [
           'attribute/cti',
           'name/cti/kebab',
-          'css/evaluate-multiplication'
+          'evaluate-multiplication'
         ],
         buildPath: 'dist/tailwind/',
         files: [
@@ -32,7 +32,7 @@ brands.forEach((brand) => {
           'attribute/cti',
           'name/cti/kebab',
           'css/flatten-properties',
-          'css/evaluate-multiplication'
+          'evaluate-multiplication'
         ],
         buildPath: 'dist/css/',
         files: [
@@ -59,7 +59,7 @@ themes.forEach((theme) => {
         transforms: [
           'attribute/cti',
           'name/cti/kebab',
-          'css/evaluate-multiplication'
+          'evaluate-multiplication'
         ],
         buildPath: 'dist/tailwind/',
         files: [
@@ -88,7 +88,7 @@ themes.forEach((theme) => {
           'attribute/cti',
           'name/cti/kebab',
           'css/flatten-properties',
-          'css/evaluate-multiplication'
+          'evaluate-multiplication'
         ],
         buildPath: 'dist/css/',
         files: [
