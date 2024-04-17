@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.32](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.31...v1.0.32) (2024-04-17)
+
+
+### Bug Fixes
+
+* Fix token names for css theme files ([#64](https://github.com/ECAInternational/eca-design-tokens/issues/64)) ([9df0ec7](https://github.com/ECAInternational/eca-design-tokens/commit/9df0ec7c1845e411dfb86fea94e7574c1c98b32c))
+
 ## [1.0.31](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.30...v1.0.31) (2024-03-26)
 
 
