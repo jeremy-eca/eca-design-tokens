@@ -42,10 +42,12 @@ StyleDictionary.registerFormat({
 
     return `:root {\n${dictionary.allProperties
       .map(({ type, name, description, value }) => {
+        const tokenName = dictionary.options.tokenName ?? type;
+
         const comment =
           currentType !== type
             ? '/**\n' +
-              ` * @tokens eca-${type}\n` +
+              ` * @tokens eca-${tokenName}\n` +
               ` * @presenter ${getPresenter(type)}*/\n`
             : '';
 

@@ -95,6 +95,7 @@ themes.forEach((theme) => {
           {
             destination: `${theme}.css`,
             format: 'css/variables/design-tokens',
+            options: { tokenName: theme },
             filter: {
               isSource: true
             }
