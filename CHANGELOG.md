@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.33](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.32...v1.0.33) (2024-04-17)
+
+
+### Features
+
+* Adding some more state color tokens ([#63](https://github.com/ECAInternational/eca-design-tokens/issues/63)) ([0c6bc05](https://github.com/ECAInternational/eca-design-tokens/commit/0c6bc057f429b698a7707e2561f0751e7948539d))
+
 ## [1.0.32](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.31...v1.0.32) (2024-04-17)
 
 
