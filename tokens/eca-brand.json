@@ -47,6 +47,10 @@
         "value": "#40505C",
         "type": "color"
       },
+      "750": {
+        "value": "#2E3943",
+        "type": "color"
+      },
       "800": {
         "value": "#252E38",
         "type": "color"

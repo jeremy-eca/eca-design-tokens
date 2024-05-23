@@ -63,7 +63,7 @@
       "description": "Cards"
     },
     "layer-3": {
-      "value": "{colors.neutral.700}",
+      "value": "{colors.neutral.750}",
       "type": "color",
       "parent": "eca/dark",
       "description": "A third background for e.g. an area of a card"
@@ -363,6 +363,23 @@
     "bg-unselected": {
       "value": "{colors.neutral.1000}",
       "type": "color"
+    },
+    "element-tonal": {
+      "value": "{colors.neutral.750}",
+      "type": "color"
+    },
+    "th-layer1": {
+      "value": "{colors.neutral.800}",
+      "type": "color"
+    },
+    "tr-odd-layer1": {
+      "value": "{colors.neutral.900}",
+      "type": "color"
+    },
+    "tr-even-layer1": {
+      "value": "#1F2830",
+      "type": "color",
+      "description": "To add to base colours later"
     }
   },
   "visualisation": {
