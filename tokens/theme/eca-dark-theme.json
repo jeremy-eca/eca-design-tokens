@@ -380,6 +380,10 @@
       "value": "#1F2830",
       "type": "color",
       "description": "To add to base colours later"
+    },
+    "bg-neutral": {
+      "value": "{colors.neutral.1000}",
+      "type": "color"
     }
   },
   "visualisation": {

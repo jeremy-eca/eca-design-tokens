@@ -380,6 +380,10 @@
       "value": "{colors.default.white}",
       "type": "color",
       "description": "To add to base colours later"
+    },
+    "bg-neutral": {
+      "value": "{colors.blue.100}",
+      "type": "color"
     }
   },
   "visualisation": {
