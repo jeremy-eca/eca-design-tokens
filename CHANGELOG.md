@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.33...v1.1.0) (2024-07-05)
+
+
+### Features
+
+* Tonal hover ([#73](https://github.com/ECAInternational/eca-design-tokens/issues/73)) ([947da31](https://github.com/ECAInternational/eca-design-tokens/commit/947da31589c72a734d00a1ed78c249a13140ebad))
+
 ## [1.0.33](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.32...v1.0.33) (2024-04-17)
 
 
