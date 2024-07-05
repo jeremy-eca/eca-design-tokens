@@ -368,18 +368,6 @@
       "value": "{colors.neutral.750}",
       "type": "color"
     },
-    "menu-alt": {
-      "value": "#212A33",
-      "type": "color"
-    },
-    "menu-lines": {
-      "value": "{colors.neutral.700}",
-      "type": "color"
-    },
-    "element-tonal-hover": {
-      "value": "{colors.neutral.800}",
-      "type": "color"
-    },
     "th-layer1": {
       "value": "{colors.neutral.800}",
       "type": "color"
