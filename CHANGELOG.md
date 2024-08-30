@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.1.0...v1.2.0) (2024-08-30)
+
+
+### Features
+
+* Update font to Manrope ([#77](https://github.com/ECAInternational/eca-design-tokens/issues/77)) ([62fce1d](https://github.com/ECAInternational/eca-design-tokens/commit/62fce1daac2f48bce88431e0d51ecef05af53305))
+
 ## [1.1.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.0.33...v1.1.0) (2024-07-05)
 
 
