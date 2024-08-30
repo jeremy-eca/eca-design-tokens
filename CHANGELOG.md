@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.2.0...v1.3.0) (2024-08-30)
+
+
+### Features
+
+* Rebrand ([#76](https://github.com/ECAInternational/eca-design-tokens/issues/76)) ([83c71e0](https://github.com/ECAInternational/eca-design-tokens/commit/83c71e028a4689ced317c52d283a9f816d102928))
+
 ## [1.2.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.1.0...v1.2.0) (2024-08-30)
 
 
