@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.3.0...v1.4.0) (2024-10-23)
+
+
+### Features
+
+* update eca-dark-theme.json ([#81](https://github.com/ECAInternational/eca-design-tokens/issues/81)) ([b8f19b6](https://github.com/ECAInternational/eca-design-tokens/commit/b8f19b647ad6284d857040afc33a1d99b9d4fc3b))
+
 ## [1.3.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.2.0...v1.3.0) (2024-08-30)
 
 
