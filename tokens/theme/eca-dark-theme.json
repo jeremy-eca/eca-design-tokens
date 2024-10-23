@@ -372,7 +372,7 @@
       "parent": "eca/dark",
       "description": ""
     },
-    "button-bg-disabled": {
+    "bg-disabled": {
       "value": "{colors.neutral.700}",
       "type": "color",
       "parent": "eca/dark",
@@ -386,12 +386,6 @@
     },
     "content-disabled": {
       "value": "{colors.neutral.600}",
-      "type": "color",
-      "parent": "eca/dark",
-      "description": ""
-    },
-    "highlight-bolder": {
-      "value": "{colors.teal.200}",
       "type": "color",
       "parent": "eca/dark",
       "description": ""
@@ -422,6 +416,12 @@
     },
     "highlight-palest": {
       "value": "{colors.teal.900}",
+      "type": "color",
+      "parent": "eca/dark",
+      "description": ""
+    },
+    "highlight-bolder": {
+      "value": "{colors.teal.200}",
       "type": "color",
       "parent": "eca/dark",
       "description": ""
