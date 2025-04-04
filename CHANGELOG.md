@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.4.0...v1.5.0) (2025-04-04)
+
+
+### Features
+
+* Update visualisation colour ([#87](https://github.com/ECAInternational/eca-design-tokens/issues/87)) ([00ea786](https://github.com/ECAInternational/eca-design-tokens/commit/00ea7869ed1c80f41aae11b41c2cbde4ead6bed1))
+
 ## [1.4.0](https://github.com/ECAInternational/eca-design-tokens/compare/v1.3.0...v1.4.0) (2024-10-23)
 
 
