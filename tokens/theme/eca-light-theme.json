@@ -625,7 +625,7 @@
         "description": "tbc"
       },
       "text-1": {
-        "value": "{colors.neutral.50}",
+        "value": "{colors.neutral.1000}",
         "type": "color"
       }
     },
