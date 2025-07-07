@@ -1,7 +1,7 @@
 {
-  "name": "@ecainternational/eca-design-tokens",
+  "name": "@jeremy-eca/design-tokens",
   "version": "1.5.0",
-  "description": "ECA Design Tokens Library",
+  "description": "ECA Design Tokens Library - Universal Package",
   "type": "module",
   "private": false,
   "scripts": {
@@ -25,10 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ECAInternational/eca-design-tokens.git"
-  },
-  "publishConfig": {
-    "@ECAInternational:registry": "https://npm.pkg.github.com"
+    "url": "git+https://github.com/jeremy-eca/eca-design-tokens.git"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
